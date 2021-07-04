@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css" />
+    <script defer type="text/javascript" src="./main.js"></script>
+    <title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__icon">
+                <svg class="header__icon--img">
+                    <use xlink:href="img/sprite.svg#icon-dice"></use> 
+                </svg>
+            </div>
+            <div class="header__text">
+                <h1>Tic Tac Toe</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="difficulty">
+            <button class="difficulty__btn" data-difficulty="3">3 x 3</button>
+            <button class="difficulty__btn" data-difficulty="4">4 x 4</button>
+            <button class="difficulty__btn" data-difficulty="5">5 x 5</button>
+        </div>
+        <div class="score-board">
+            <div class="score-board__player">
+                <p class="score-board__player--score-label">Player: <span class="score-board__player--score" id="score-player">20</span></p>
+            </div>
+            <div class="score-board__round">
+                <p class="score-board__round">Round : <span class="score-board__round--value">1</span></p>
+            </div>
+            <div class=" score-board__player">
+                <p class="score-board__player--score-label">Computer: <span class="score-board__player--score" id="score-computer">20</span></p>
+            </div>
+            <div class=" score-board__player score-board--hidden score-board__player--winner">
+                <p class="score-board__player--score-label">Round won by Computer</p>
+            </div>
+            <div class="score-board__winner score-board__winner--hidden">
+                <p class="score-board__winner-label">Game won by Computer</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container__game container__game-box-3">
+                <!-- <div class="tile" data-tile-index="1"><span>X</span></div>
+                <div class="tile" data-tile-index="2"><span>X</span></div>
+                <div class="tile" data-tile-index="3"><span>X</span></div>
+                <div class="tile" data-tile-index="4"><span>X</span></div>
+                <div class="tile" data-tile-index="5"><span>X</span></div>
+                <div class="tile" data-tile-index="6"><span>X</span></div>
+                <div class="tile" data-tile-index="7"><span>X</span></div>
+                <div class="tile" data-tile-index="8"><span>X</span></div>
+                <div class="tile" data-tile-index="9"><span>X</span></div> -->
+            </div>
+            <div class="container__new-game">
+                <button class="container__new-game--btn">Reset</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
